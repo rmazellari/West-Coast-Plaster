@@ -4,8 +4,9 @@ import React from "react"
 import logo from '../images/gatsby-icon.png'
 
 
-const Header = ({ siteTitle }) => (
-  <header className="header">
+
+const Header = ({ siteTitle, pathName }) => (
+  <header className={`header ${pathName}`}>
     <div>
       <h1 style={{ margin: 0 }}>
         <Link to="/">
@@ -14,9 +15,7 @@ const Header = ({ siteTitle }) => (
           <div className="title-2">Plaster</div>
         </Link>
       </h1>
-      <div className="contact-btn">
-        <a href="#">Say Hello!</a>
-      </div>
+      <button onClick={showForm} className="contact-btn">Say Hello!</button>      
     </div>
   </header>
 )
@@ -27,6 +26,10 @@ Header.propTypes = {
 
 Header.defaultProps = {
   siteTitle: ``,
+  pathName: window.location.pathname.replace('/', ''),
 }
 
+const showForm = (event) => {
+  document.querySelector('.contact-form-container').classList.add('show')
+}
 export default Header

@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-
+import ContactForm from "./contact-form"
 import Header from "./header"
 import "./layout.css"
 import "./custom.css"
@@ -26,7 +26,8 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />        
+        <Header siteTitle={data.site.siteMetadata.title} />   
+        <ContactForm />     
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, West Coast Plaster
