@@ -78,7 +78,7 @@ main {
 
 .background img {    
     margin: 0;
-    min-height: 600px;
+    min-height: 533px;
     width: 100%;
 }
 
@@ -150,7 +150,6 @@ footer {
 .contact-form-container.show .contact-form {
     display: grid;
     grid-gap: 1rem;
-    margin-top: 3rem;
 }
 
 .contact-form input,.contact-form textarea {
