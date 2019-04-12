@@ -5,8 +5,8 @@ import logo from '../images/gatsby-icon.png'
 
 
 
-const Header = ({ siteTitle, pathName }) => (
-  <header className={`header ${pathName}`}>
+const Header = ({ siteTitle }) => (
+  <header className="header">
     <div>
       <h1 style={{ margin: 0 }}>
         <Link to="/">
@@ -26,7 +26,6 @@ Header.propTypes = {
 
 Header.defaultProps = {
   siteTitle: ``,
-  pathName: window.location.pathname.replace('/', ''),
 }
 
 const showForm = (event) => {
