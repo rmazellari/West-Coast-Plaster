@@ -143,8 +143,12 @@ footer {
     transform: translateY(0);
 }
 
-.contact-form, .form-header {
-    padding: 2rem 2rem 0 2rem;
+.form-header {
+    padding: 2rem;
+}
+
+.contact-form {
+    padding:0 2rem;
 }
 
 .contact-form-container.show .contact-form {
