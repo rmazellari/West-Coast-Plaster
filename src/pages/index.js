@@ -10,7 +10,7 @@ import { FaInfo } from 'react-icons/fa'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />    
-    <div className="background">
+    <div className="background" style={{backgroundImage:`url(${background})`}}>
       <img src={background} className="hide_on_mobile" alt="background" />
       <img src={backgroundMobile} className="hide_on_desktop" alt="background Mobile" />
       <div className="msg">
